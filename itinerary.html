@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Voyage Planet Profile</title>
+    <title>Voyage Planet Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,13 +14,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand mr-5" href="logo.html"  style="font-family: 'Fredoka One', cursive;">Voyage Planet</a>
+        <a class="navbar-brand mr-5" href="logo.html" style="font-family: 'Fredoka One', cursive;">Voyage Planet</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +28,7 @@
                     <a class="nav-link mr-5" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
+                    <a class="nav-link active mr-5" href="itinerary.html">Itinerary<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-5" href="health_training.html">Health Training</a>
@@ -40,7 +38,7 @@
           Account
         </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item active" href="#">Create an Account<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="create_account.html">Create an Account</a>
                         <a class="dropdown-item" href="#">My Trips</a>
                     </div>
                 </li>
@@ -48,62 +46,36 @@
         </div>
     </nav>
 
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/4T1BoNa.jpg?1" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Travel to</h5>
+                <p class="card-text">Sun, Mercury, Venus, Earth</p>
+                <a href="#" class="card-link">More infomations</a>
+                <a href="#" class="card-link">Passenger booked</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/xvAH8PJ.jpg?1" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Travel to</h5>
+                <p class="card-text">Earth, Mars, Jupiter, Saturn, Uranus and Neptune</p>
+                <a href="#" class="card-link">More infomations</a>
+                <a href="#" class="card-link">Passenger booked</a>
+            </div>
+        </div>        
+        <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/Kl9LFL4.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Travel to</h5>
+                <p class="card-text">Sun, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune</p>
+                <a href="#" class="card-link">More infomations</a>
+                <a href="#" class="card-link">Passenger booked</a>
+            </div>
+        </div>
+    </div>
 
-    <div class="wrapper">
-                <div id="wrapperText">
-                    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="first-name-input"><b>First name</b></label>
-            <input type="text" class="form-control" id="first-name-input" required>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="last-name-input"><b>Last name</b></label>
-            <input type="text" class="form-control" id="last-name-input" required>
-        </div>
-    </div>
-                        <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="street-address-line-input1"><b>Street Address Line 1</b></label>
-            <input type="text" class="form-control" id="street-address-line-input1">
-        </div>
-        <div class="form-group col-md-6">
-            <label for="street-address-line-input2"><b>Street Address Line-input 2</b></label>
-            <input type="text" class="form-control" id="street-address-line-input2">
-        </div>
-    </div>
-                    <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="city-input"><b>City</b></label>
-            <input type="text" class="form-control" id="city-input" placeholder="City" required>
-        </div>
-        <div class="form-group col-md-4">
-            <label for="state-input"><b>State</b></label>
-            <input type="text" class="form-control" id="state-input" placeholder="State" required>
-        </div>
-        <div class="form-group col-md-4">
-            <label for="zip-input"><b>Zip</b></label>
-            <input type="text" class="form-control" id="zip-input" placeholder="Zip" required>
-        </div>
-    </div>
-    <div class="form-row">
-                <div class="form-group col-md-6">
-            <label for="first-name-input"><b>Number</b></label>
-            <input type="text" class="form-control" id="first-name-input" required>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="last-name-input"><b>Emergency Number</b></label>
-            <input type="text" class="form-control" id="last-name-input" required>
-        </div>
-
-    </div>
-        <div class="form-group">
-            <label for="exampleTextarea"><b>Comprehensive Medical Test</b></label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </div>
-        <button id="profile-button" class="btn btn-primary" type="submit">Create</button>
-    </div>
-    </div>
-</div>
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
