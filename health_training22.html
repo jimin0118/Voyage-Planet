@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>VoyageX</title>
+    <title>Voyage Planet Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="home.html">Home</a>
+                    <a class="nav-link mr-5" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active mr-5" href="itinerary.html">Itinerary<span class="sr-only">(current)</span></a>
-                </li>                
+                    <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="about.html">About</a>
+                    <a class="nav-link active mr-5" href="health_training.html">Health Training<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,34 +46,54 @@
             </ul>
         </div>
     </nav>
-    <div class="card-group">
-        <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/4T1BoNa.jpg?1" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Moon</h5>
-                <p class="card-text">$2,000</p>
-                <a href="#" class="card-link">More infomations</a>
-                <a href="#" class="card-link">Passenger booked</a>
+
+    <div class="wrapper">
+        <form id="wrapperText">
+            <div class="form-row">
+               
+                        <label class="mr-sm-3" for="inlineFormCustomSelect">Departure</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>NASA Stennis Space Center</option>
+                            <option value="1">NASA Stennis Space Center</option>
+                            <option value="2">NASA Johnson Space Center</option>
+                            <option value="3">NASA Kennedy Space Center</option>
+                            <option value="4">NASA Goddard Space Center</option>
+                            <option value="5">NASA Marshall Space Center</option>
+                            
+                        </select>
+                       
+                        <label class="mr-sm-3" for="inlineFormCustomSelect">Destination</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Solar</option>
+                            <option value="1">Solar</option>
+                            <option value="2">Moon</option>
+                        </select>
+                 
+                     
+                        <label class="mr-sm-3" for="inlineFormCustomSelect">Voyage Dates</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Mar 20 - Mar 30</option>
+                            <option value="1">Mar 20 - Mar 30</option>
+                            <option value="2">April 2 - April 14</option>
+                        </select>
+                   
+
+                        <label class="mr-sm-3" for="inlineFormCustomSelect">Passengers</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>2</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                        </select>
+                   
+
+               
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                
+             
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/xvAH8PJ.jpg?1" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Sun</h5>
-                <p class="card-text">$4,000</p>
-                <a href="#" class="card-link">More infomations</a>
-                <a href="#" class="card-link">Passenger booked</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/Kl9LFL4.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Mars</h5>
-                <p class="card-text">$3,000</p>
-                <a href="#" class="card-link">More infomations</a>
-                <a href="#" class="card-link">Passenger booked</a>
-            </div>
-        </div>
+        </form>
     </div>
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>

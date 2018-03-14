@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Voyage Planet Home</title>
+    <title>VoyageX</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,25 +14,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand mr-5" href="logo.html" style="font-family: 'Fredoka One', cursive;">Voyage Planet</a>
+        <a class="navbar-brand mr-5" href="logo.html" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="about.html">About</a>
+                    <a class="nav-link active mr-5" href="home.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
-                </li>
+                </li>                
                 <li class="nav-item">
-                    <a class="nav-link active mr-5" href="health_training.html">Health Training<span class="sr-only">(current)</span></a>
+                    <a class="nav-link mr-5" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -46,75 +45,58 @@
             </ul>
         </div>
     </nav>
-
     <div class="wrapper">
         <form id="wrapperText">
-            <div class="form-row">
-                <div class="form-group col-md-12 my-1">
-                        <label class="mr-sm-12" for="inlineFormCustomSelect">Destination</label>
-                                    <div class="form-row">
-                        <select class="custom-select col-md-6 my-1" id="inlineFormCustomSelect">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Departure</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
                             <option selected>NASA Stennis Space Center</option>
                             <option value="1">NASA Stennis Space Center</option>
                             <option value="2">NASA Johnson Space Center</option>
+                            <option value="3">NASA Kennedy Space Center</option>
+                            <option value="4">NASA Goddard Space Center</option>
+                            <option value="5">NASA Marshall Space Center</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Destination</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected>Solar</option>
+                            <option value="1">Solar</option>
+                            <option value="2">Moon</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </div>
-            <div class="form-row">
-                <div class="form-group col-md-6 my-3">
-                    <label for="inputAddress">Departing</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="mm/dd/yyyy">
-                </div>
-                <div class="form-group col-md-6 my-3">
-                    <label for="inputAddress2">Returning</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="mm/dd/yyyy">
-                </div>
-            </div>
-            <div class="form-row">
-
                 <div class="form-row">
-                    <div class="col-md-6 my-3">
-                        <label for="inlineFormCustomSelect">Adults(18+)</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Voyage Dates</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected>Mar 20 - Mar 30</option>
+                            <option value="1">Mar 20 - Mar 30</option>
+                            <option value="2">April 2 - April 14</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Passengers</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
                             <option selected>2</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="3">4</option>
-                            <option value="3">5</option>
-                            <option value="3">6</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-6 my-3">
-                        <label for="inlineFormCustomSelect">Children(0-17)</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>0</option>
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="3">4</option>
-                            <option value="3">5</option>
-                            <option value="3">6</option>
-                        </select>
+                    <div class="form-check col-md-3 my-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember my preference</label>
                     </div>
+                    <button type="submit" class="btn btn-primary">Book</button>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-auto my-4">
-                    <div class="custom-control custom-checkbox mr-sm-2">
-                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
-                    </div>
-                </div>
-                <div class="col-auto my-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </form>
+            </form>
     </div>
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
