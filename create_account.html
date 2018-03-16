@@ -18,28 +18,31 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand mr-5" href="logo.html" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
+        <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" id="myNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link mr-5" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
-                </li>               
-                <li class="nav-item">
-                    <a class="nav-link mr-5" href="about.html">About</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="#section1">About</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Account
         </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item active" href="#">Create an Account<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item active" href="create_account.html">Create an Account<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="#">My Account</a>
                         <a class="dropdown-item" href="#">My Trips</a>
                     </div>
                 </li>
@@ -96,7 +99,7 @@
                 <label for="exampleTextarea"><b>Comprehensive Medical Test</b></label>
                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
-            <button id="profile-button" class="btn btn-primary" type="submit">Create</button>
+            <a href="book.html" button id="profile-button" class="btn btn-primary" type="nextBtn">Next</a>
         </div>
     </div>
     </div>
